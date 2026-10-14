@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#192725">
+  <meta name="description" content="Morrow Municipal Archive. Every minute accounted for. A self-contained archival mystery.">
+  <title>Morrow Municipal Archive — The Ninth Minute</title>
+  <link rel="icon" href="assets/seal.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to record</a>
+  <header class="masthead">
+    <a class="brand" href="#welcome" aria-label="Morrow Municipal Archive home"><img src="assets/seal.svg" alt="" width="42" height="42"><span>MORROW<span class="brand-sub">MUNICIPAL ARCHIVE</span></span></a>
+    <div class="masthead-center">DEPARTMENT OF CONTINUITY<span>PUBLIC ACCESS TERMINAL · 09</span></div>
+    <button class="text-button" id="help-open">Visitor information <span aria-hidden="true">↗</span></button>
+  </header>
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Archive navigation">
+      <div class="terminal-status"><span class="status-dot"></span> CONNECTION STABLE<span class="terminal-time">09:08:<span id="seconds">00</span></span></div>
+      <div class="sidebar-label">FIND A RECORD</div>
+      <form id="search-form" class="search-form" role="search"><label class="sr-only" for="search">Search archive</label><input id="search" placeholder="Title, reference, keyword…" autocomplete="off"><button aria-label="Search archive">↵</button></form>
+      <div id="search-result" class="search-result" role="status"></div>
+      <nav id="archive-nav"></nav>
+      <div class="sidebar-bottom"><button id="notebook-open" class="notebook-button">FIELD NOTES <span id="note-count">00</span></button><div class="progress-label"><span>RECORDS RECONCILED</span><span id="progress-count">0 / 9</span></div><div class="progress-track"><span id="progress-bar"></span></div><p class="sidebar-quote">“The past is a public utility.”<br><span>Continuity Charter, § 1</span></p></div>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <footer class="site-footer"><span>MORROW MUNICIPAL ARCHIVE · EST. 1931</span><span id="footer-motto">Zero records lost.</span><button id="settings-open">Session &amp; access</button></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="drawer" aria-labelledby="drawer-title"><div class="dialog-head"><h2 id="drawer-title"></h2><button id="drawer-close" aria-label="Close panel">×</button></div><div id="drawer-body"></div></dialog>
+  <noscript><div class="noscript">This archive needs JavaScript to open records and save your investigation. Enable it to begin.</div></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
