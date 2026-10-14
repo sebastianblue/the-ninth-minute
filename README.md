@@ -1,5 +1,7 @@
 # The Ninth Minute
 
+[Play The Ninth Minute](https://sebastianblue.github.io/the-ninth-minute/)
+
 A complete, self-contained archival mystery inside the fictional Morrow Municipal Archive. Nine connected records, three parallel investigation threads, an optional hidden record, and three final dispositions.
 
 Begin with the public register. All necessary evidence lives on the site. No real-world contact, outside research, source-code inspection, account creation, or time gates are required. Sound is optional and duplicates a visible pulse trace.
